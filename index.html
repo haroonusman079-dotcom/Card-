@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>JHOOMAR - Musab Weds Eshal | AQD Invites</title>
+<meta name="description" content="Dulhan ka jhoomar shaadi ke din chamakta hai, aur ye card mehmaanon ke phone pe.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+:root{--gold:#d4af37;--gold2:#f5d67b;--gold3:#b8860b;--maroon:#2b0a1a;--maroon2:#4a0e2a;--cream:#f9f0d8;--cream2:#fff8e7;--purple:#3a0f2a}
+body{font-family:'Jost',sans-serif;background:#0f050a;color:#fff;overflow-x:hidden;scroll-behavior:smooth}
+a{color:inherit;text-decoration:none} button{font-family:inherit;cursor:pointer;border:none}
+.gold-text{background:linear-gradient(180deg,#fff6c0 0%,#f5d67b 30%,#d4af37 55%,#8a6508 80%,#f5d67b 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.script{font-family:'Great Vibes',cursive;font-weight:400}
+.serif{font-family:'Cormorant Garamond',serif}
+.arabic{font-family:'Amiri',serif;direction:rtl}
+.spark{position:fixed;pointer-events:none;z-index:9999;font-size:20px;animation:sparkFly 1.2s ease-out forwards}
+@keyframes sparkFly{0%{transform:translateY(0) scale(.5) rotate(0deg);opacity:1}100%{transform:translateY(-140px) scale(1.4) rotate(180deg);opacity:0}}
+.rainbow-spark{position:fixed;width:9px;height:9px;border-radius:50%;pointer-events:none;z-index:9998;animation:rainbow 1.4s ease-out forwards}
+@keyframes rainbow{0%{transform:translate(0,0) scale(1);opacity:1}100%{transform:translate(var(--rx),var(--ry)) scale(0);opacity:0}}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:linear-gradient(180deg,rgba(0,0,0,.7),transparent);backdrop-filter:blur(4px)}
+.topbar b{letter-spacing:3px;font-size:11px} .topbar span{font-size:11px;letter-spacing:2px;opacity:.9}
+.music-btn{width:38px;height:38px;border-radius:50%;background:rgba(212,175,55,.18);border:1px solid var(--gold);color:var(--gold2);display:flex;align-items:center;justify-content:center;font-size:16px}
+section{min-height:100svh;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:84px 20px 40px;overflow:hidden}
+.hall-bg{position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,#5a1a35 0%,#2b0a1a 45%,#120409 100%)}
+.hall-bg:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(245,214,123,.18),transparent 40%),radial-gradient(circle at 80% 20%,rgba(245,214,123,.18),transparent 40%)}
+.arch{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:88%;max-width:520px;height:82%;border:3px solid #c9a227;border-radius:220px 220px 12px 12px;box-shadow:0 0 0 8px rgba(201,162,39,.12),0 0 60px rgba(212,175,55,.35);background:linear-gradient(180deg,#3d1226,#1a0612)}
+.arch-inner{position:absolute;inset:14px;border:1px solid rgba(212,175,55,.55);border-radius:210px 210px 8px 8px;overflow:hidden}
+  .jhoomar-wrap{position:relative;z-index:2;text-align:center}
+.eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:#e8c96a}
+.intro-line{font-size:27px;line-height:1.25;margin:18px 0 8px;font-weight:300;text-align:center}
+.intro-line b{color:var(--gold2);font-weight:500}
+.jhoomar-svg{width:290px;max-width:84vw;filter:drop-shadow(0 0 22px rgba(255,215,0,.65));animation:swing 3.2s ease-in-out infinite;transform-origin:top center}
+@keyframes swing{0%,100%{transform:rotate(-2deg)}50%{transform:rotate(2deg)}}
+.tap-hint{margin-top:22px;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,#f5d67b,#c9a227);color:#2b0a1a;padding:13px 24px;border-radius:100px;font-weight:700;font-size:14px;letter-spacing:.5px;box-shadow:0 10px 30px rgba(212,175,55,.45);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.small{font-size:12px;opacity:.75;margin-top:12px;letter-spacing:1px}
+.phone{width:min(385px,94vw);aspect-ratio:9/18.5;background:#000;border:4px solid #d4af37;border-radius:38px;overflow:hidden;position:relative;z-index:2;box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 0 6px #1a1a1a,0 0 40px rgba(212,175,55,.4)}
+.phone-notch{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:110px;height:24px;background:#000;border-radius:20px;z-index:20}
+.phone-screen{position:absolute;inset:0;overflow:hidden}
+.curtain-left,.curtain-right{position:absolute;top:0;width:50%;height:100%;background:linear-gradient(180deg,#f9e6b8,#e8c99a 50%,#f5d9a0);z-index:10;transition:transform 1.4s cubic-bezier(.7,0,.2,1);box-shadow:inset 0 0 40px rgba(0,0,0,.15)}
+.curtain-left{left:0;border-right:1px solid #c9a227} .curtain-right{right:0;border-left:1px solid #c9a227}
+.open .curtain-left{transform:translateX(-102%) rotate(-3deg)} .open .curtain-right{transform:translateX(102%) rotate(3deg)}
+.bow{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);z-index:11;font-size:72px;transition:opacity .4s,transform .4s}
+.open .bow{opacity:0;transform:translate(-50%,-50%) scale(0)}
+.chandelier{position:absolute;top:0;left:50%;transform:translateX(-50%);width:100%;text-align:center;z-index:1}
+.mirror-names{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;background:radial-gradient(circle at 50% 30%,#4a0e2a,#1a0612)}
+.mirror-names h2{font-family:'Great Vibes',cursive;font-size:46px;line-height:1;color:#f5d67b;text-shadow:0 0 20px rgba(245,214,123,.7)}
+.mirror-names .and{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;margin:6px 0;color:#fff}
+.cover-btn{margin-top:18px;background:#fff;color:#2b0a1a;padding:11px 18px;border-radius:100px;font-weight:600;font-size:13px}
+.paper{width:min(430px,94vw);background:linear-gradient(180deg,#fff8e7,#f9ecd0);color:#2b0a1a;border-radius:18px;padding:22px;position:relative;z-index:2;box-shadow:0 20px 60px rgba(0,0,0,.5);border:1px solid #d4af37}
+.paper:before{content:'';position:absolute;inset:8px;border:1px solid rgba(184,134,11,.4);border-radius:12px;pointer-events:none}
+.jewel-box{width:150px;height:110px;margin:10px auto;background:linear-gradient(180deg,#4a0e2a,#2b0a1a);border-radius:10px 10px 14px 14px;position:relative;box-shadow:0 12px 30px rgba(0,0,0,.35);border:2px solid #d4af37;cursor:pointer;transition:transform .3s}
+.jewel-box:active{transform:scale(.96)} .jewel-box:after{content:'💎';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:38px}
+.jewel-lid{position:absolute;top:-18px;left:-4px;right:-4px;height:26px;background:#5a1230;border:2px solid #d4af37;border-radius:12px 12px 4px 4px}
+.letter-text{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.6;text-align:center}
+.letter-text h3{font-family:'Great Vibes',cursive;font-size:32px;color:#6b153d}
+.letter-text p{margin:10px 0}
+  
+.events{width:min(440px,94vw);position:relative;z-index:2;display:flex;flex-direction:column;gap:16px}
+.event-card{background:linear-gradient(180deg,#fffdf5,#f9ecd0);color:#2b0a1a;border-radius:18px;padding:20px;border:1px solid #d4af37;box-shadow:0 14px 40px rgba(0,0,0,.35);position:relative;overflow:hidden}
+.event-card:before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#b8860b,#f5d67b,#b8860b)}
+.event-card h4{font-family:'Great Vibes',cursive;font-size:34px;color:#6b153d;line-height:1}
+.event-card .date{font-weight:600;letter-spacing:1px;font-size:13px;margin:8px 0 2px}
+.event-card .venue{font-size:13px;opacity:.8} .event-card .dress{font-size:12px;background:#f5e6b8;display:inline-block;padding:5px 10px;border-radius:100px;margin-top:10px}
+.btn-row{display:flex;gap:10px;margin-top:14px} .btn{flex:1;padding:11px;border-radius:100px;font-weight:600;font-size:13px;text-align:center}
+.btn-gold{background:linear-gradient(180deg,#f5d67b,#c9a227);color:#2b0a1a} .btn-dark{background:#2b0a1a;color:#fff}
+.countdown{display:flex;gap:10px;justify-content:center;margin:16px 0}
+.cd{background:rgba(255,255,255,.08);border:1px solid rgba(212,175,55,.5);border-radius:14px;padding:12px 10px;min-width:68px;text-align:center;backdrop-filter:blur(6px)}
+.cd b{font-size:22px;display:block;color:#f5d67b} .cd span{font-size:10px;letter-spacing:2px;text-transform:uppercase}
+.rsvp-card{width:min(440px,94vw);background:#fff8e7;color:#2b0a1a;border-radius:20px;padding:22px;position:relative;z-index:2;border:2px solid #d4af37}
+.rsvp-card h3{font-family:'Great Vibes',cursive;font-size:34px;text-align:center;color:#6b153d}
+.rsvp-card label{font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;display:block;margin:14px 0 6px}
+.rsvp-card input,.rsvp-card select,.rsvp-card textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #e0c97a;background:#fff;font-size:14px;font-family:inherit;outline:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px} .chip{padding:8px 14px;border-radius:100px;border:1px solid #d4af37;background:#fff;font-size:13px;cursor:pointer} .chip.active{background:#2b0a1a;color:#fff}
+.qty{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:8px} .qty button{width:38px;height:38px;border-radius:50%;background:#2b0a1a;color:#fff;font-size:20px} .qty b{font-size:20px}
+.send-btn{width:100%;margin-top:18px;padding:14px;border-radius:100px;background:linear-gradient(180deg,#f5d67b,#c9a227);color:#2b0a1a;font-weight:700;font-size:15px}
+.success{display:none;text-align:center;padding:20px} .success h4{font-family:'Great Vibes',cursive;font-size:36px;color:#6b153d}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:min(440px,94vw);position:relative;z-index:2}
+.gallery div{aspect-ratio:1;border-radius:16px;overflow:hidden;border:1px solid rgba(212,175,55,.6);background:linear-gradient(135deg,#4a0e2a,#b8860b);display:flex;align-items:center;justify-content:center;font-size:42px}
+.thank{width:min(440px,94vw);background:linear-gradient(180deg,#2b0a1a,#4a0e2a);border:1px solid #d4af37;border-radius:20px;padding:26px;text-align:center;position:relative;z-index:2}
+.thank h3{font-family:'Great Vibes',cursive;font-size:36px;color:#f5d67b;line-height:1.1}
+.footer{padding:28px 20px 40px;text-align:center;background:#0f050a} .footer h2{font-size:38px;letter-spacing:6px} .footer p{font-size:12px;opacity:.7;margin-top:6px}
+.cta{display:inline-block;margin-top:16px;background:linear-gradient(180deg,#f5d67b,#c9a227);color:#2b0a1a;padding:13px 24px;border-radius:100px;font-weight:700}
+.progress{position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:101;display:flex;flex-direction:column;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);border:1px solid var(--gold)} .dot.active{background:var(--gold2);box-shadow:0 0 10px var(--gold)}
+@media(max-width:480px){.intro-line{font-size:22px}.mirror-names h2{font-size:38px}}
+</style>
+</head>
+<body>
+<div class="topbar"><b>AQD INVITES</b><span>JHOOMAR • 2027</span><button class="music-btn" onclick="toggleMusic()">♪</button></div>
+<div class="progress"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
 
+<!-- SECTION 1 - INTRO JHOOMAR -->
+<section id="s1">
+<div class="hall-bg"></div><div class="arch"><div class="arch-inner"></div></div>
+<div class="jhoomar-wrap">
+<div class="eyebrow">Naya Design • AQD Invites</div>
+<h1 class="intro-line">Dulhan ka jhoomar to<br> sab ne dekha hai...<br><b>lekin kabhi shaadi ke<br> card ka jhoomar dekha hai?</b></h1>
+<svg class="jhoomar-svg" viewBox="0 0 300 220" fill="none"><path d="M150 10 L150 30" stroke="#d4af37" stroke-width="3"/><circle cx="150" cy="45" r="22" fill="#c0392b" stroke="#d4af37" stroke-width="4"/><path d="M40 70 Q150 30 260 70" stroke="#d4af37" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M35 70 Q150 170 265 70" stroke="#d4af37" stroke-width="5" fill="none"/><g fill="#f5d67b"><circle cx="70" cy="85" r="5"/><circle cx="95" cy="95" r="5"/><circle cx="120" cy="105" r="5"/><circle cx="150" cy="110" r="5"/><circle cx="180" cy="105" r="5"/><circle cx="205" cy="95" r="5"/><circle cx="230" cy="85" r="5"/><circle cx="85" cy="115" r="4"/><circle cx="115" cy="125" r="4"/><circle cx="150" cy="130" r="4"/><circle cx="185" cy="125" r="4"/><circle cx="215" cy="115" r="4"/></g><g fill="#27ae60"><circle cx="55" cy="72" r="5"/><circle cx="245" cy="72" r="5"/></g><g stroke="#d4af37"><line x1="60" y1="95" x2="60" y2="130"/><line x1="100" y1="115" x2="100" y2="150"/><line x1="150" y1="130" x2="150" y2="165"/><line x1="200" y1="115" x2="200" y2="150"/><line x1="240" y1="95" x2="240" y2="130"/></g><g><circle cx="60" cy="140" r="5" fill="#fff"/><circle cx="100" cy="160" r="5" fill="#fff"/><circle cx="150" cy="175" r="6" fill="#e74c3c"/><circle cx="200" cy="160" r="5" fill="#fff"/><circle cx="240" cy="140" r="5" fill="#fff"/></g></svg>
+<div><button class="tap-hint" onclick="goTo('s2')">✨ Ek Tap - Card Kholo ✨</button></div>
+<div class="small">TAP KARO • PARDE KHULENGE • JHOOMAR CHAMKEGA</div>
+</div>
+</section>
+<!-- SECTION 2 - COVER / CURTAIN -->
+<section id="s2">
+<div class="hall-bg"></div>
+<div style="position:relative;z-index:2;text-align:center;margin-bottom:14px"><div class="eyebrow">Velvet • Crystal • Candlelight</div><div class="script gold-text" style="font-size:52px;line-height:1">Jhoomar</div></div>
+<div class="phone" id="phone"><div class="phone-notch"></div><div class="phone-screen">
+<div class="curtain-left"></div><div class="curtain-right"></div>
+<div class="bow" onclick="openCard()">🎀</div>
+<div class="mirror-names">
+<div style="font-size:28px">✦</div>
+<div class="arabic" style="font-size:22px;color:#f5d67b">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+<div class="serif" style="font-size:11px;letter-spacing:3px;margin:10px 0">WITH THE BLESSINGS OF ALLAH</div>
+<h2 id="groomName">Musab Khawaja</h2><div class="and">weds</div><h2 id="brideName">Eshal Durrani</h2>
+<div style="margin-top:12px;font-size:12px;letter-spacing:2px">11 • 12 • 13 • 14 FEBRUARY 2027<br>LAHORE, PAKISTAN</div>
+<button class="cover-btn" onclick="goTo('s3')">Open Your Letter ↓</button>
+</div></div></div>
+<div style="position:relative;z-index:2;margin-top:14px;text-align:center"><b style="color:#f5d67b">Ek Tap...</b> aur parde khulte hai<br><span style="font-size:13px;opacity:.8">Saamne crystal ka jhoomar aur aaine pe dulha dulhan ke naam</span></div>
+</section>
+
+<!-- SECTION 3 - LETTER / JEWEL BOX -->
+<section id="s3">
+<div class="hall-bg"></div>
+<div style="position:relative;z-index:2;text-align:center;margin-bottom:14px"><div class="eyebrow">Har Mehmaan Ke Liye</div><h2 style="font-size:28px">Velvet Ka <span class="gold-text">Jewel Box</span></h2></div>
+<div class="paper">
+<div style="text-align:center;font-size:11px;letter-spacing:3px">A LETTER FOR</div>
+<div class="script" id="guestTitle" style="font-size:30px;text-align:center;color:#6b153d">Sana & Family</div>
+<div class="jewel-box" onclick="openBox(this)"><div class="jewel-lid"></div></div>
+<div style="text-align:center;font-size:12px;margin-bottom:10px">Box pe tap karo 💎</div>
+<div class="letter-text">
+<div class="arabic" style="font-size:18px">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا</div>
+<p style="font-size:13px;font-style:italic;opacity:.7">"And among His signs is that He created for you spouses from among yourselves, so you may find tranquillity in them."</p>
+<h3>Dear <span class="guestNameSpan">Sana & Family</span>,</h3>
+<p>With grateful hearts, we would love to share the happiest days of our lives with you.</p>
+<p>Your love and duas have carried us here, and our celebration would not be complete without you.</p>
+<p><b>— Musab & Eshal</b></p>
+</div></div>
+</section>
+<!-- SECTION 4 - EVENTS -->
+<section id="s4">
+<div class="hall-bg"></div>
+<div style="position:relative;z-index:2;text-align:center;margin-bottom:10px"><div class="eyebrow">Please Join Us For</div><h2 class="script" style="font-size:48px;color:#f5d67b">The Celebrations</h2></div>
+<div class="countdown"><div class="cd"><b id="d">00</b><span>Days</span></div><div class="cd"><b id="h">00</b><span>Hours</span></div><div class="cd"><b id="m">00</b><span>Mins</span></div><div class="cd"><b id="s">00</b><span>Secs</span></div></div>
+<div class="events">
+<div class="event-card"><h4>Mehndi</h4><div class="date">Thursday, 11 February 2027 • 7 PM Onwards</div><div class="venue">📍 The Velvet Courtyard, Lahore</div><div class="dress">Dress Code: Yellow & Green</div><div class="btn-row"><a class="btn btn-gold" href="https://maps.google.com/?q=Lahore" target="_blank">📍 Directions</a><button class="btn btn-dark" onclick="addCal('Mehndi','2027-02-11')">+ Calendar</button></div></div>
+<div class="event-card"><h4>Nikah</h4><div class="date">Friday, 12 February 2027 • 8 PM</div><div class="venue">📍 The Crystal Hall, Lahore</div><div class="dress">Dress Code: Maroon & Gold</div><div class="btn-row"><a class="btn btn-gold" href="https://maps.google.com/?q=Lahore" target="_blank">📍 Directions</a><button class="btn btn-dark" onclick="addCal('Nikah','2027-02-12')">+ Calendar</button></div></div>
+<div class="event-card"><h4>Baraat & Walima</h4><div class="date">Saturday, 13 February 2027 • 7:30 PM</div><div class="venue">📍 Royal Palm, Lahore</div><div class="dress">Dress Code: Formal Shine</div><div class="btn-row"><a class="btn btn-gold" href="https://maps.google.com/?q=Lahore" target="_blank">📍 Directions</a><button class="btn btn-dark" onclick="addCal('Walima','2027-02-13')">+ Calendar</button></div></div>
+<div class="event-card"><h4>Qawwali Night</h4><div class="date">Sunday, 14 February 2027 • 8 PM</div><div class="venue">📍 Velvet Courtyard, Lahore</div><div class="dress">Dress Code: Black & Gold</div><div class="btn-row"><a class="btn btn-gold" href="https://maps.google.com/?q=Lahore" target="_blank">📍 Directions</a><button class="btn btn-dark" onclick="addCal('Qawwali','2027-02-14')">+ Calendar</button></div></div>
+</div>
+</section>
+
+<!-- SECTION 5 - RSVP -->
+<section id="s5">
+<div class="hall-bg"></div>
+<div class="rsvp-card" id="rsvpCard">
+<h3>Will You Join Us?</h3>
+<p style="text-align:center;font-size:13px;opacity:.7">Bas ek tap • RSVP ek tap ✓</p>
+<label>Your Name</label><input id="guestName" value="Sana & Family" placeholder="Apna naam likhein">
+<label>Which Events Will You Join?</label>
+<div class="chips" id="chips"><button class="chip active" onclick="toggleChip(this)">Mehndi</button><button class="chip active" onclick="toggleChip(this)">Nikah</button><button class="chip" onclick="toggleChip(this)">Baraat</button><button class="chip" onclick="toggleChip(this)">Walima</button></div>
+<label>How Many Will Come?</label>
+<div class="qty"><button onclick="changeQty(-1)">−</button><b id="qty">2</b><button onclick="changeQty(1)">+</button></div>
+<label>A Note For The Couple</label><textarea rows="2" id="guestMsg">May Allah bless you both with love and happiness!</textarea>
+<button class="send-btn" onclick="sendRSVP()">Send My Reply ✓</button>
+<div class="success" id="success"><div style="font-size:40px">💍</div><h4>Shukriya!</h4><p>Your RSVP has been saved.<br>We can't wait to celebrate with you!</p><p id="rsvpSummary" style="font-size:13px;margin-top:8px;opacity:.8"></p></div>
+</div>
+</section>
+<!-- SECTION 6 - THANK YOU -->
+<section id="s6">
+<div class="hall-bg"></div>
+<div style="position:relative;z-index:2;text-align:center;margin-bottom:14px"><h2 class="script" style="font-size:44px;color:#f5d67b">Thank You For Being<br>Part Of Our Story</h2></div>
+<div class="gallery"><div>👰🏻‍♀️</div><div>🤵🏻</div><div>💍</div><div>✨</div></div>
+<div class="thank" style="margin-top:16px">
+<div class="arabic" style="color:#f5d67b">بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
+<p style="font-size:13px;margin:10px 0;opacity:.85">May Allah bless you both, shower His blessings upon you, and unite you in goodness.</p>
+<h3>Dulhan ka jhoomar shaadi ke din chamakta hai...</h3>
+<p style="font-size:14px;margin-top:8px">aur ye card <b style="color:#f5d67b">mehmaanon ke phone pe</b> chamakta rahega.</p>
+<button class="send-btn" onclick="goTo('s1')" style="max-width:260px">↺ Replay Invitation</button>
+</div>
+</section>
+
+<footer class="footer">
+<div style="font-size:28px">💎</div>
+<h2>AQD <span style="font-family:'Great Vibes',cursive;letter-spacing:0;font-size:42px;color:#f5d67b">invites</span></h2>
+<p>Made For Moments That Matter.</p>
+<p style="margin-top:10px">Jhoomar Chahiye? Comment <b style="color:#f5d67b">CARD</b></p>
+<a class="cta" href="https://aqdinvites.com" target="_blank">Comment CARD To Get Details →</a>
+<p style="margin-top:14px">10 Designs + Custom • Preview in 24 Hours • aqdinvites.com</p>
+<p style="margin-top:8px;font-size:11px">Share link: <b id="shareLink">index.html?name=Sana</b></p>
+<button class="cta" onclick="copyLink()" style="padding:10px 18px;font-size:13px">📋 Copy Invite Link</button>
+</footer>
+
+<script>
+let qtyVal=2, musicOn=false;
+function goTo(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});burst();}
+function openCard(){document.getElementById('phone').classList.add('open');burst();setTimeout(()=>{let b=document.querySelector('.bow');if(b)b.style.display='none'},500)}
+function openBox(el){el.style.transform='scale(1.1) rotate(-3deg)';setTimeout(()=>el.style.transform='scale(1)',300);burst();let n=document.getElementById('guestName')?document.getElementById('guestName').value:'Guest';alert('💎 Jewel Box Khul Gaya!\\nLetter aapke naam se hai - '+n);}
+function toggleChip(el){el.classList.toggle('active');burstSmall();}
+function changeQty(d){qtyVal=Math.max(1,Math.min(10,qtyVal+d));document.getElementById('qty').innerText=qtyVal;}
+function sendRSVP(){let n=document.getElementById('guestName').value||'Guest';let ev=[...document.querySelectorAll('.chip.active')].map(c=>c.innerText).join(', ')||'All Events';document.getElementById('success').style.display='block';document.getElementById('rsvpSummary').innerText=n+' • '+qtyVal+' Guests • '+ev;document.getElementById('success').scrollIntoView({behavior:'smooth',block:'center'});burst();setTimeout(()=>alert('JazakAllah '+n+'! ❤️\\nAapki RSVP save ho gayi.\\nHum aapka intezaar karenge!'),300);}
+function addCal(name,date){let url=`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(name+' - Musab & Eshal')}&dates=${date.replaceAll('-','')}T190000/${date.replaceAll('-','')}T230000&details=Jhoomar Wedding&location=Lahore`;window.open(url,'_blank');}
+function toggleMusic(){musicOn=!musicOn;alert(musicOn?'🎵 Music On - Shehnai baj rahi hai...':'🔇 Music Off');}
+  function burst(){for(let i=0;i<24;i++){let s=document.createElement('div');s.className='rainbow-spark';let colors=['#ff0000','#ff9a00','#ffee00','#00e400','#00aaff','#ff00ff','#ff5e00'];s.style.background=colors[i%colors.length];s.style.left=(Math.random()*100)+'vw';s.style.top=(Math.random()*100)+'vh';s.style.setProperty('--rx',(Math.random()*200-100)+'px');s.style.setProperty('--ry',(Math.random()*-200-50)+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),1400);}for(let i=0;i<10;i++){let e=document.createElement('div');e.className='spark';e.innerText=['✦','✧','💎','✨','🌟'][i%5];e.style.left=(Math.random()*90+5)+'vw';e.style.top=(Math.random()*90+5)+'vh';document.body.appendChild(e);setTimeout(()=>e.remove(),1200);}}
+function burstSmall(){for(let i=0;i<6;i++){let s=document.createElement('div');s.className='spark';s.innerText='✦';s.style.left=(Math.random()*100)+'vw';s.style.top=(Math.random()*100)+'vh';document.body.appendChild(s);setTimeout(()=>s.remove(),1200);}}
+let target=new Date('2027-02-11T19:00:00').getTime();
+setInterval(()=>{let now=new Date().getTime();let diff=Math.max(0,target-now);let dd=Math.floor(diff/86400000);let hh=Math.floor((diff%86400000)/3600000);let mm=Math.floor((diff%3600000)/60000);let ss=Math.floor((diff%60000)/1000);let el=id=>document.getElementById(id);if(el('d'))el('d').innerText=String(dd).padStart(2,'0');if(el('h'))el('h').innerText=String(hh).padStart(2,'0');if(el('m'))el('m').innerText=String(mm).padStart(2,'0');if(el('s'))el('s').innerText=String(ss).padStart(2,'0');},1000);
+setInterval(burstSmall,3000);
+window.addEventListener('scroll',()=>{let secs=[...document.querySelectorAll('section')];let dots=[...document.querySelectorAll('.dot')];let idx=0;secs.forEach((s,i)=>{if(window.scrollY>=s.offsetTop-300)idx=i});dots.forEach((d,i)=>d.classList.toggle('active',i===idx));});
+document.addEventListener('click',e=>{let s=document.createElement('div');s.className='spark';s.innerText='✦';s.style.left=e.clientX+'px';s.style.top=e.clientY+'px';document.body.appendChild(s);setTimeout(()=>s.remove(),1200);});
+// AUTO NAME FROM LINK: index.html?name=Ayesha
+(function(){let p=new URLSearchParams(window.location.search);let name=p.get('name');if(name){name=decodeURIComponent(name);let gt=document.getElementById('guestTitle');if(gt)gt.innerText=name;let gn=document.getElementById('guestName');if(gn)gn.value=name;document.querySelectorAll('.guestNameSpan').forEach(e=>e.innerText=name);let sl=document.getElementById('shareLink');if(sl)sl.innerText=window.location.href;}})();
+function copyLink(){let link=window.location.href+'?name='+encodeURIComponent(document.getElementById('guestName').value||'Guest');navigator.clipboard.writeText(link).then(()=>alert('Link Copy Ho Gaya! 📋\\n'+link));}
+</script>
+</body>
+</html>
